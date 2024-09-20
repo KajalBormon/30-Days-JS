@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce</title>
+</head>
+<body>
+   
+        <input type="text" oninput="ProcessDebounce()" name="" value="">
+        <button onClick="ProcessDebounce()">Click Me</button>
+        <p class="print"></p>
+
+ 
+
+    <script>
+        var print = document.querySelector('.print');
+        function debounce(fun,delay){
+            let timer;
+            return (...args)=>{
+               clearTimeout(timer);
+               timer = setTimeout(()=>{
+                    fun(...args);
+              },delay); 
+            }
+        }
+        function saveInput(){
+            alert('HEY I AM DEBOUNCEING ALERT')
+        }
+        const ProcessDebounce = debounce(saveInput, 1000);
+    </script>
+</body>
+</html>
