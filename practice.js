@@ -61,12 +61,26 @@ check(); */
 
 
 /* ----------------------Chunk Array------------------------------ */
-const arr = [1,2,3,4,5,6,7];
+/* const arr = [1,2,3,4,5,6,7];
 
 const size = 2;
 const result = [];
 for(let i=0; i<arr.length; i+=size){
   let slice = arr.slice(i, i+size);
+  console.log(slice);
   result.push(slice);
 }
-return result;
+console.log(result); */
+
+/* ----------------------Array ProtoType last----------------------- */
+
+/* const arr = [1,2,3];
+
+Array.prototype.last = function(){
+  return this.length === 0 ? -1 : this[this.length-1];
+} */
+
+ 
+ /* ----------------------Array ProtoType last----------------------- */ 
+
+console.log(1+2);
