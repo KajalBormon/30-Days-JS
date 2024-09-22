@@ -36,6 +36,8 @@
     ]
   }` */
 
+const { sortBy } = require("lodash");
+
   /* const arr = `[1,2,3,4]`; */
 
 /* console.log(JSON.parse(arr));
@@ -81,6 +83,13 @@ Array.prototype.last = function(){
 } */
 
  
- /* ----------------------Array ProtoType last----------------------- */ 
+ /* ----------------------Array Sort By----------------------- */ 
 
-console.log(1+2);
+const arr = [4,5,3,1]
+
+arr.sort((a,b)=>{
+  return a-b;
+});
+console.log(arr);
+
+
