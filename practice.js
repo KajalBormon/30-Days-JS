@@ -85,11 +85,73 @@ Array.prototype.last = function(){
  
  /* ----------------------Array Sort By----------------------- */ 
 
-const arr = [4,5,3,1]
+ /* const arr = [{"x":1},{"x": 0},{"x": -1}]
 
-arr.sort((a,b)=>{
-  return a-b;
-});
-console.log(arr);
+const string = JSON.stringify(arr);
+const newArr = [];
+console.log(string);
+
+for(let i=0; i<string.length; i++){
+  if(string[i]< string[i+1]){
+    newArr.push(string[i]);
+  }
+  console.log(newArr);
+} */
+
+
+/* ----------------------Join two array----------------------- */ 
+/* arr1 = [
+  {"id": 1, "x": 1},
+  {"id": 2, "x": 9},
+  {"id": 5, "x": 10}
+]
+const result = {};
+for(let i=0; i<arr1.length; i++){
+  result[arr1[i].id] = arr1[i];
+} */
+
+
+/* ----------------------Multidimensional Array with Flatter----------------------- */
+const arr1 = [
+  ['kajal', 'cse', 24],
+  ['sagor','cse',21],
+  ['abir','cse',26]
+]
+
+const arr2 = [
+  ['kajal', 'cse', 24],
+  ['sagor','cse',21],
+  ['abir','cse',26]
+]
+
+/* const arr = [arr1,arr2];
+
+const depth = arr.flat(6)
+console.log(depth); */
+
+const depth = 2;
+
+const newArr = [];
+for(let i=0; i<arr1.length; i++){
+  for(let j=0; j<arr1.length; j++){
+    if(depth == i){
+      newArr.push(arr1[i][j])
+    }else{
+      newArr
+    }
+    
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
 
 
