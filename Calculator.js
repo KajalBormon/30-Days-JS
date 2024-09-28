@@ -1,5 +1,4 @@
 class Calculator {
-    
     /** 
      * @param {number} value
      */
